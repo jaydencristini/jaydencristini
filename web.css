@@ -21,7 +21,7 @@ h1{
 }
 
 img{
-  resize: fit;
+  object-fit: fill; 
 }
 
 nav ul{
