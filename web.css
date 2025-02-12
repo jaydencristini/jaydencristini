@@ -20,6 +20,10 @@ h1{
   margin-bottom: 10px;
 }
 
+img{
+  resize: fit;
+}
+
 nav ul{
   list-style: none;
 }
