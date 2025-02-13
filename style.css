@@ -1,61 +1,143 @@
-* {
-    margin: 0px;
-    padding: 0;
-    box-sizing: border-box;
-}
+    .inter-regular {
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
 
-body{
-    font-family:'JetBrains Mono'
-}
+    .macondo-regular {
+        font-family: "Macondo", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-.hero {
-    height: 100vh;
-}
-
-.hero nav{
-    position: absolute;
-    width: 50%;
-    left: 25%;
-    height: 4rem;
-    background: rgba(0,0,0,0.005);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     
-}
+    .atkinson-hyperlegible-mono-regular {
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+      
 
-.hero nav div{
-    text-align: center;
-    flex-grow: 1; 
-    width: 33%;
-    display:inline-block;
-    list-style: none;
-    padding: 0 .3rem;
-}
+    * {
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-}
+    body {
+        font-family: 'Inter', sans-serif, Arial;
+    }
 
-.hero video {
-    background: white;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+    .hero {
+        height: 100vh;
+        background-image: url("images/titlescreen.jpg");
+        background-repeat: no-repeat;
+    }
 
-.introdiv {
-    height: 100vh;
-    color:white;
-    background: black;
-}
+    .hero nav {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
 
-.introdiv h1 {
-    padding-top: 18.75rem;
-    text-align: center;
-}
+    .hero nav div {
+        text-align: center;
+        flex-grow: 1;
+        width: 33%;
+        display: inline-block;
+        list-style: none;
+        padding: 0 .3rem;
+    }
+
+    .hero nav div .active{
+        text-decoration: underline;
+    }
+
+    .hero nav div a {
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+    }
+
+    .hero nav div a:hover {
+        color: rgba(0, 0, 0, 0.6)
+    }
+
+    .hero .intro {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .intro span {
+        height: 50%;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        color: black;
+
+        font-size:3rem;
+    }
+
+    .intro span h1{
+        font-weight: 675;
+        font-size: 3.5rem;
+        background: -webkit-radial-gradient(rgb(83, 83, 83), rgb(0, 0, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .location{
+        position: absolute;
+        width: 25%;
+        left: 30%;
+        bottom: 25%;
+    }
+
+    .location div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .location .locationright{
+        float: right;
+        text-align: right;
+    }
+
+    .introdiv {
+        height: 100vh;
+        color: white;
+        background: black;
+    }
+
+    .introdiv h1 {
+        padding-top: 18.75rem;
+        text-align: center;
+    }
+
+    /* CODE FOR RESUME BUTTON
+     .downloadres{
+        position: absolute;
+        width: 17.5%;
+        right: 15%;
+        bottom: 30%;
+    }
+
+    .downloadres a{
+        text-decoration: none;
+        font-family: "Atkinson Hyperlegible Mono";
+        color: black;
+        font-size: 2rem;
+    } */
