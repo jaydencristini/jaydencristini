@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'JetBrains Mono'
+}
+
+.hero {
+    height: 100vh;
+}
+
+.hero nav{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    height: 4rem;
+    background: rgba(0,0,0,0.005);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.hero nav div{
+    text-align: center;
+    flex-grow: 1; 
+    width: 33%;
+    display:inline-block;
+    list-style: none;
+    padding: 0 .3rem;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.hero video {
+    background: white;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.introdiv {
+    height: 100vh;
+    color:white;
+    background: black;
+}
+
+.introdiv h1 {
+    padding-top: 18.75rem;
+    text-align: center;
+}
